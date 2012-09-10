@@ -63,7 +63,7 @@ function parseData(data) {
     return recipes;
 }
 
-function readDataFromURL(dataURL, outputPath) {
+function parseDataFromURL(dataURL, outputPath) {
     
     var url = URL.parse(dataURL);
     
@@ -154,7 +154,7 @@ function main() {
         console.log("Reading Data : " + dis);
         console.log(url);
         
-        readDataFromURL(url, outputPath);
+        parseDataFromURL(url, outputPath);
     }
 }
 
